@@ -25,6 +25,26 @@ module.exports.init = server => (
                     register : require('hapi-boom-decorators'),
                 }, done);
             },
+            inert(done) {
+                server.register({
+                    register : require('inert'),
+                }, done);
+            },
+            vision(done) {
+                server.register({
+                    register : require('vision'),
+                }, done);
+            },
+            swagger(done) {
+                server.register({
+                    register : require('hapi-swagger'),
+                }, done);
+            },
+            user(done) {
+                server.register({
+                    register : require('../../app/plugins/user'),
+                }, done);
+            },
         }, (err) => {
             if (err) {
                 reject(err);
