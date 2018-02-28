@@ -4,7 +4,7 @@ Boilerplate Hapi utilisé pour les TP Node.JS des Licence pro
 # Lancement
 
 ```
-nodejs server.js
+node server.js
 ```
 
 **Attention** : En fonction de la valeur de votre `NODE_ENV`, le serveur peut avoir une configuration différente.
@@ -12,7 +12,7 @@ nodejs server.js
 Ensuite, rendez vous sur :
 
 ```
-http://0.0.0.0:3000
+http://0.0.0.0:8080
 ```
 
 et vous devriez avoir :
